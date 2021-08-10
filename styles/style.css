@@ -80,11 +80,12 @@
 
 .search-control {
   width: 276px;
+  right: -17px;
   max-height: 34px;
   border-radius: 8px 0px 0px 8px;
   border: 0;
   outline: none;
-  padding: 10px 15px;
+  padding: 10px 50px 10px 15px;
   display: inline-block;
   position: relative;
   -webkit-box-sizing: border-box;
@@ -92,7 +93,7 @@
 }
 
 .search-btn {
-  left: -34px;
+  left: -17px;
   position: relative;
   background-color: #6E4B87;
   color: #FFFFFF;
@@ -124,9 +125,29 @@
             flex-direction: column;
     width: 98%;
     padding: 30px 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .search-bar {
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .search-bar {
+    left: -5px;
+  }
+  .search-control {
+    width: 260px;
+  }
+  .sort-list {
+    width: 180px;
+  }
+  .toolbar label {
+    color: #FFFFFF;
+    padding-right: 10px;
+    font-size: 14px;
   }
 }
 
