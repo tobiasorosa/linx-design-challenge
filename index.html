@@ -5,9 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarefas a fazer</title>
-    <link rel="stylesheet" href="./css/style.css" >
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <header class="header">
+        <h1 class="title">Tarefas a fazer</h1>
+        <h2 class="subtitle">Adicione e complete tarefas para organizar melhor a sua semana. :)</h2>
+    </header>
+    <main>
+        <div class="toolbar">
+            <div class="search-bar">
+                <input type="text" class="form-control" placeholder="Busque tarefas"/>
+                <button type="button" class="search-btn">Buscar</button>
+            </div>
+            <div class="sort-bar">
+                <label for="sort">Organizar por:</label>
+                <select id="sort" name="sort-options">
+                    <option value="prazo">Prazo</option>
+                    <option value="prioridade">Prioridade</option>
+                    <option value="data-dec">Mais antigo</option>
+                    <option value="data-cres">Mais recente</option>
+                </select>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
