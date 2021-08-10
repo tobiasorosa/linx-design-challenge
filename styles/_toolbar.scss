@@ -4,9 +4,9 @@
     width: 75%;
     margin: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: $orange;
-    padding: 25px 40px;
+    padding: 25px 100px;
     border-radius: 8px;
     align-items: center;
     position: relative;
@@ -14,9 +14,6 @@
 
 .search-bar {
     display: flex;
-    margin: auto;
-    position: relative;
-
 }
 
 .toolbar label {

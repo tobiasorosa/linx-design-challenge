@@ -32,17 +32,18 @@
 
 @media screen and (max-width: 700px) {
   .title::before {
-    height: 50%;
+    height: 55%;
   }
   .title {
     font-size: 24px;
     padding-top: 64px;
+    padding-bottom: 2em;
   }
   .subtitle {
     color: #422755;
     font-size: 16px;
     width: 80%;
-    margin: 5em auto 0 auto;
+    margin: 0 auto 0 auto;
     padding-bottom: 4em;
   }
 }
@@ -53,10 +54,11 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: #FEAF3D;
-  padding: 25px 40px;
+  padding: 25px 100px;
   border-radius: 8px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -68,8 +70,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: auto;
-  position: relative;
 }
 
 .toolbar label {
