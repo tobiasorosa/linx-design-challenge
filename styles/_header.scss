@@ -1,0 +1,51 @@
+@import 'colors';
+
+.header {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    background-color: $purple;
+    display: block;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
+.title {
+    font-size: 36px;
+    padding-top: 140px;
+    font-weight: 800;
+}
+
+.subtitle {
+    font-size: 18px;
+    padding-top: 1.6em;
+    padding-bottom: 6em;
+    font-weight: 400;
+}
+
+@media screen and(max-width: 700px) {
+    .title::before {
+        height: 50%;
+    }
+
+    .title {
+        font-size: 24px;
+        padding-top: 64px;
+    }
+    
+    .subtitle {
+        color: $purple;
+        font-size: 16px;
+        width: 80%;
+        margin: 5em auto 0 auto;
+        padding-bottom: 4em;
+    }
+}

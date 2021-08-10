@@ -1,0 +1,140 @@
+.header {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.title::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  background-color: #422755;
+  display: block;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+}
+
+.title {
+  font-size: 36px;
+  padding-top: 140px;
+  font-weight: 800;
+}
+
+.subtitle {
+  font-size: 18px;
+  padding-top: 1.6em;
+  padding-bottom: 6em;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 700px) {
+  .title::before {
+    height: 50%;
+  }
+  .title {
+    font-size: 24px;
+    padding-top: 64px;
+  }
+  .subtitle {
+    color: #422755;
+    font-size: 16px;
+    width: 80%;
+    margin: 5em auto 0 auto;
+    padding-bottom: 4em;
+  }
+}
+
+.toolbar {
+  width: 75%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #FEAF3D;
+  padding: 25px 40px;
+  border-radius: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.search-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  position: relative;
+}
+
+.toolbar label {
+  color: #FFFFFF;
+  padding-right: 18px;
+  font-size: 14px;
+}
+
+.search-control {
+  width: 276px;
+  max-height: 34px;
+  border-radius: 8px 0px 0px 8px;
+  border: 0;
+  outline: none;
+  padding: 10px 15px;
+  display: inline-block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.search-btn {
+  left: -34px;
+  position: relative;
+  background-color: #6E4B87;
+  color: #FFFFFF;
+  border-radius: 8px;
+  border: 0;
+  padding: 8px 10px;
+  height: 34px;
+}
+
+.sort-list {
+  color: #414141;
+  border-radius: 8px;
+  padding-left: 30px;
+  height: 34px;
+  width: 200px;
+}
+
+@media screen and (min-width: 700px) {
+  .toolbar {
+    margin-top: 3em;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .toolbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 98%;
+    padding: 30px 0;
+  }
+  .search-bar {
+    margin-bottom: 20px;
+  }
+}
+
+* {
+  font-family: 'Open Sans';
+}
+
+body {
+  font-family: 'Open Sans';
+}
+/*# sourceMappingURL=style.css.map */
