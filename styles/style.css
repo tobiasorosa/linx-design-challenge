@@ -163,15 +163,17 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: auto;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  margin: 70px auto 0 auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   z-index: -1;
 }
 
 .dead-short::after {
   position: relative;
-  bottom: 430px;
+  bottom: 440px;
   left: -10px;
   color: #FFFFFF;
   width: 100px;
@@ -185,7 +187,7 @@
 
 .dead-late::after {
   position: relative;
-  bottom: 430px;
+  bottom: 440px;
   left: -10px;
   color: #FFFFFF;
   width: 100px;
@@ -208,7 +210,6 @@
           box-shadow: 1px 5px 10px 0px #00000040;
   background-color: #FFFFFF;
   z-index: 0;
-  overflow: hidden;
 }
 
 .card-content {
@@ -274,12 +275,22 @@
 .deadline-label {
   font-size: 16px;
   padding-right: 10px;
+  font-weight: 700;
 }
 
 .deadline-value {
   font-size: 20px;
   font-weight: 900;
   color: #F04837;
+}
+
+.late {
+  color: #F04837;
+  font-size: 10px;
+  padding-left: 12px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .insertion {
@@ -293,6 +304,12 @@
     margin-bottom: -150px;
     z-index: 1000;
   }
+  .card-text > button {
+    visibility: hidden;
+  }
+  .card:hover > .card-content > .card-text > button {
+    visibility: visible;
+  }
 }
 
 @media (max-width: 1090px) {
@@ -303,8 +320,15 @@
 }
 
 @media (max-width: 650px) {
+  .card {
+    position: relative;
+  }
   .card-container {
     width: 100%;
+    margin: 0 auto;
+  }
+  #card5, #card6, #card7, #card8 {
+    display: none;
   }
   .card-content {
     -webkit-box-orient: horizontal;
@@ -312,6 +336,13 @@
         -ms-flex-direction: row;
             flex-direction: row;
     padding: 16px;
+  }
+  .card-content::after {
+    content: url("../assets/img/red-clock.png");
+    top: 16px;
+    right: 14px;
+    height: 20px;
+    position: absolute;
   }
   .card-text {
     -webkit-box-pack: center;
@@ -328,17 +359,13 @@
     height: 210px;
     margin: 12px 0;
   }
-  .card-desc {
-    height: auto;
-    font-size: 11px;
-  }
   .dead-short::after {
     bottom: 175px;
     left: -10px;
   }
   .dead-late::after {
     bottom: 175px;
-    left: -20px;
+    left: -10px;
   }
   .card-img {
     max-width: 147px;
@@ -346,6 +373,21 @@
   }
   .card-name {
     margin: 0 0 5px 0;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .card-desc {
+    height: auto;
+    font-size: 11px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .deadline {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
   }
   .deadline-label {
     font-size: 12px;
@@ -353,20 +395,33 @@
   .deadline-value {
     font-size: 18px;
   }
+  .insertion {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 355px) {
   .card-img {
-    width: 129px;
-    height: 150px;
+    width: 137px;
+    height: 160px;
   }
   .card {
     width: 95%;
     height: auto;
   }
   .card-content {
-    padding: 5px;
+    padding: auto;
     margin: auto;
+  }
+  .dead-short::after {
+    bottom: 170px;
+    left: -5px;
+  }
+  .dead-late::after {
+    bottom: 170px;
+    left: -5px;
   }
 }
 
@@ -381,6 +436,16 @@
   margin-top: 25px;
   width: 100%;
   max-width: 220px;
+  background-position: center;
+  -webkit-transition: background 0.8s;
+  transition: background 0.8s;
+}
+
+.finish-btn:active {
+  background-color: #6E4B87;
+  background-size: 100%;
+  -webkit-transition: background 0s;
+  transition: background 0s;
 }
 
 .deadline-btn {
@@ -401,6 +466,43 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-position: center;
+  -webkit-transition: background 0.8s;
+  transition: background 0.8s;
+}
+
+.deadline-btn:active {
+  background-color: #FEAF3D;
+  background-size: 100%;
+  -webkit-transition: background 0s;
+  transition: background 0s;
+}
+
+.more-btn {
+  display: block;
+  width: 200px;
+  height: 40px;
+  font-weight: 700;
+  font-size: 16px;
+  background: #6E4B87;
+  border-radius: 8px;
+  border: none;
+  color: #FFFFFF;
+  margin: 10px auto;
+  background-position: center;
+  -webkit-transition: background 0.8s;
+  transition: background 0.8s;
+}
+
+.more-btn:active {
+  background-color: #422755;
+  background-size: 100%;
+  -webkit-transition: background 0s;
+  transition: background 0s;
+}
+
+.deadline-btn:hover {
+  cursor: pointer;
 }
 
 .clock-vector {
