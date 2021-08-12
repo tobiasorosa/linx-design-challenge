@@ -19,6 +19,10 @@
     line-height: 19px;
 }
 
+.linx-box img {
+    margin-left: 20px;
+}
+
 @media (max-width: 768px) {
     .linx-box {
         flex-direction: column;
