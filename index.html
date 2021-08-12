@@ -19,24 +19,291 @@
         </div>
     </header>
     <main>
-        <div class="toolbar">
-            <form class="search-bar">
-                <input type="text" class="search-control" placeholder="Busque tarefas"/>
-                <input type="submit" value="Buscar" class="search-btn">
-            </form>
-            <form class="sort-bar">
-                <label for="sort">Organizar por:</label>
-                <select id="sort" name="sort-options" class="sort-list">
-                    <option value="prazo">Prazo</option>
-                    <option value="prioridade">Prioridade</option>
-                    <option value="data-dec">Mais antigo</option>
-                    <option value="data-cres">Mais recente</option>
-                </select>
-            </form>
+        <div class="container">
+            <div class="toolbar">
+                <form class="search-bar">
+                    <input type="text" class="search-control" placeholder="Busque tarefas"/>
+                    <input type="submit" value="Buscar" class="search-btn">
+                </form>
+                <form class="sort-bar">
+                    <label for="sort">Organizar por:</label>
+                    <select id="sort" name="sort-options" class="sort-list">
+                        <option value="prazo">Prazo</option>
+                        <option value="prioridade">Prioridade</option>
+                        <option value="data-dec">Mais antigo</option>
+                        <option value="data-cres">Mais recente</option>
+                    </select>
+                </form>
+            </div>
+            <!-- <div class="flex-container">
+                <div class="card-container">
+                    <div class="card dead-short">
+                        <div class="card-content">
+                            <img src="assets/img/card.png" class="card-img">
+                            <div class="card-text">
+                                <h5 class="card-name">Nome da tarefa</h5>
+                                <p class="card-desc">Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata.</p>
+                                <div class="deadline">
+                                    <h6 class="deadline-label">Prazo:</h6>
+                                    <p class="deadline-value">00/00</p>
+                                </div>
+                                <p class="insertion">Data de inclusão: há 2 semanas</p>
+                                <button type="button" class="finish-btn">Concluir</button>
+                            </div>
+                            <button type="button" class="deadline-btn"><img src="assets/img/clock.png" alt="small clock" class="clock-vector">Alterar prazo</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <img src="assets/img/card.png" class="card-img">
+                        <div class="card-text">
+                            <h5 class="card-name">Nome da tarefa</h5>
+                            <p class="card-desc">Descrição da tarefa, o que deve ser feito.</p>
+                            <div class="deadline">
+                                <h6 class="deadline-label">Prazo:</h6>
+                                <p class="deadline-value">00/00</p>
+                            </div>
+                            <p class="insertion">Data de inclusão: há 2 semanas</p>
+                            <button type="button" class="finish-btn">Concluir</button>
+                            <button type="button" class="deadline-btn"><img src="assets/img/clock.png" alt="small clock" class="clock-vector">Alterar prazo</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <img src="assets/img/card.png" class="card-img">
+                        <div class="card-text">
+                            <h5 class="card-name">Nome da tarefa</h5>
+                            <p class="card-desc">Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata.</p>
+                            <div class="deadline">
+                                <h6 class="deadline-label">Prazo:</h6>
+                                <p class="deadline-value">00/00</p>
+                            </div>
+                            <p class="insertion">Data de inclusão: há 2 semanas</p>
+                            <button type="button" class="finish-btn">Concluir</button>
+                            <button type="button" class="deadline-btn"><img src="assets/img/clock.png" alt="small clock" class="clock-vector">Alterar prazo</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <img src="assets/img/card.png" class="card-img">
+                        <div class="card-text">
+                            <h5 class="card-name">Nome da tarefa</h5>
+                            <p class="card-desc">Descrição da tarefa, o que deve ser feito.</p>
+                            <div class="deadline">
+                                <h6 class="deadline-label">Prazo:</h6>
+                                <p class="deadline-value">00/00</p>
+                            </div>
+                            <p class="insertion">Data de inclusão: há 2 semanas</p>
+                            <button type="button" class="finish-btn">Concluir</button>
+                            <button type="button" class="deadline-btn"><img src="assets/img/clock.png" alt="small clock" class="clock-vector">Alterar prazo</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <img src="assets/img/card.png" class="card-img">
+                        <div class="card-text">
+                            <h5 class="card-name">Nome da tarefa</h5>
+                            <p class="card-desc">Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata.</p>
+                            <div class="deadline">
+                                <h6 class="deadline-label">Prazo:</h6>
+                                <p class="deadline-value">00/00</p>
+                            </div>
+                            <p class="insertion">Data de inclusão: há 2 semanas</p>
+                            <button type="button" class="finish-btn">Concluir</button>
+                            <button type="button" class="deadline-btn"><img src="assets/img/clock.png" alt="small clock" class="clock-vector">Alterar prazo</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <img src="assets/img/card.png" class="card-img">
+                        <div class="card-text">
+                            <h5 class="card-name">Nome da tarefa</h5>
+                            <p class="card-desc">Descrição da tarefa, o que deve ser feito.</p>
+                            <div class="deadline">
+                                <h6 class="deadline-label">Prazo:</h6>
+                                <p class="deadline-value">00/00</p>
+                            </div>
+                            <p class="insertion">Data de inclusão: há 2 semanas</p>
+                            <button type="button" class="finish-btn">Concluir</button>
+                            <button type="button" class="deadline-btn"><img src="assets/img/clock.png" alt="small clock" class="clock-vector">Alterar prazo</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card dead-late">
+                    <div class="card-content">
+                        <img src="assets/img/card.png" class="card-img">
+                        <div class="card-text">
+                            <h5 class="card-name">Nome da tarefa</h5>
+                            <p class="card-desc">Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata.</p>
+                            <div class="deadline">
+                                <h6 class="deadline-label">Prazo:</h6>
+                                <p class="deadline-value">00/00</p>
+                            </div>
+                            <p class="insertion">Data de inclusão: há 2 semanas</p>
+                            <button type="button" class="finish-btn">Concluir</button>
+                            <button type="button" class="deadline-btn"><img src="assets/img/clock.png" alt="small clock" class="clock-vector">Alterar prazo</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <img src="assets/img/card.png" class="card-img">
+                        <div class="card-text">
+                            <h5 class="card-name">Nome da tarefa</h5>
+                            <p class="card-desc">Descrição da tarefa, o que deve ser feito.</p>
+                            <div class="deadline">
+                                <h6 class="deadline-label">Prazo:</h6>
+                                <p class="deadline-value">00/00</p>
+                            </div>
+                            <p class="insertion">Data de inclusão: há 2 semanas</p>
+                            <button type="button" class="finish-btn">Concluir</button>
+                            <button type="button" class="deadline-btn"><img src="assets/img/clock.png" alt="small clock" class="clock-vector">Alterar prazo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="flex-container">
+            <div class="card-container ">
+                <div class="card dead-short">
+                    <div class="card-content">
+                        <img src="./assets/img/card.png" class="card-img">
+                        <div class="card-text">
+                            <h5 class="card-name">Nome da tarefa</h5>
+                            <p class="card-desc">Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata.</p>
+                            <div class="deadline">
+                                <h6 class="deadline-label">Prazo:</h6>
+                                <p class="deadline-value">00/00</p>
+                            </div>
+                            <p class="insertion">Data de inclusão: há 2 semanas</p>
+                            <button type="button" class="finish-btn">Concluir</button>
+                            <button type="button" class="deadline-btn"><img src="assets/img/clock.png" alt="small clock" class="clock-vector">Alterar prazo</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <img src="./assets/img/card.png" class="card-img">
+                        <div class="card-text">
+                            <h5 class="card-name">Nome da tarefa</h5>
+                            <p class="card-desc">Descrição da tarefa, o que deve ser feito.</p>
+                            <div class="deadline">
+                                <h6 class="deadline-label">Prazo:</h6>
+                                <p class="deadline-value">00/00</p>
+                            </div>
+                            <p class="insertion">Data de inclusão: há 2 semanas</p>
+                            <button type="button" class="finish-btn">Concluir</button>
+                            <button type="button" class="deadline-btn"><img src="assets/img/clock.png" alt="small clock" class="clock-vector">Alterar prazo</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <img src="./assets/img/card.png" class="card-img">
+                        <div class="card-text">
+                            <h5 class="card-name">Nome da tarefa</h5>
+                            <p class="card-desc">Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata.</p>
+                            <div class="deadline">
+                                <h6 class="deadline-label">Prazo:</h6>
+                                <p class="deadline-value">00/00</p>
+                            </div>
+                            <p class="insertion">Data de inclusão: há 2 semanas</p>
+                            <button type="button" class="finish-btn">Concluir</button>
+                            <button type="button" class="deadline-btn"><img src="assets/img/clock.png" alt="small clock" class="clock-vector">Alterar prazo</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <img src="./assets/img/card.png" class="card-img">
+                        <div class="card-text">
+                            <h5 class="card-name">Nome da tarefa</h5>
+                            <p class="card-desc">Descrição da tarefa, o que deve ser feito.</p>
+                            <div class="deadline">
+                                <h6 class="deadline-label">Prazo:</h6>
+                                <p class="deadline-value">00/00</p>
+                            </div>
+                            <p class="insertion">Data de inclusão: há 2 semanas</p>
+                            <button type="button" class="finish-btn">Concluir</button>
+                            <button type="button" class="deadline-btn"><img src="assets/img/clock.png" alt="small clock" class="clock-vector">Alterar prazo</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <img src="./assets/img/card.png" class="card-img">
+                        <div class="card-text">
+                            <h5 class="card-name">Nome da tarefa</h5>
+                            <p class="card-desc">Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata.</p>
+                            <div class="deadline">
+                                <h6 class="deadline-label">Prazo:</h6>
+                                <p class="deadline-value">00/00</p>
+                            </div>
+                            <p class="insertion">Data de inclusão: há 2 semanas</p>
+                            <button type="button" class="finish-btn">Concluir</button>
+                            <button type="button" class="deadline-btn"><img src="assets/img/clock.png" alt="small clock" class="clock-vector">Alterar prazo</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <img src="./assets/img/card.png" class="card-img">
+                        <div class="card-text">
+                            <h5 class="card-name">Nome da tarefa</h5>
+                            <p class="card-desc">Descrição da tarefa, o que deve ser feito.</p>
+                            <div class="deadline">
+                                <h6 class="deadline-label">Prazo:</h6>
+                                <p class="deadline-value">00/00</p>
+                            </div>
+                            <p class="insertion">Data de inclusão: há 2 semanas</p>
+                            <button type="button" class="finish-btn">Concluir</button>
+                            <button type="button" class="deadline-btn"><img src="assets/img/clock.png" alt="small clock" class="clock-vector">Alterar prazo</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card dead-late">
+                    <div class="card-content">
+                        <img src="./assets/img/card.png" class="card-img">
+                        <div class="card-text">
+                            <h5 class="card-name">Nome da tarefa</h5>
+                            <p class="card-desc">Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata.</p>
+                            <div class="deadline">
+                                <h6 class="deadline-label">Prazo:</h6>
+                                <p class="deadline-value">00/00</p>
+                            </div>
+                            <p class="insertion">Data de inclusão: há 2 semanas</p>
+                            <button type="button" class="finish-btn">Concluir</button>
+                            <button type="button" class="deadline-btn"><img src="assets/img/clock.png" alt="small clock" class="clock-vector">Alterar prazo</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <img src="./assets/img/card.png" class="card-img">
+                        <div class="card-text">
+                            <h5 class="card-name">Nome da tarefa</h5>
+                            <p class="card-desc">Descrição da tarefa, o que deve ser feito.</p>
+                            <div class="deadline">
+                                <h6 class="deadline-label">Prazo:</h6>
+                                <p class="deadline-value">00/00</p>
+                            </div>
+                            <p class="insertion">Data de inclusão: há 2 semanas</p>
+                            <button type="button" class="finish-btn">Concluir</button>
+                            <button type="button" class="deadline-btn"><img src="assets/img/clock.png" alt="small clock" class="clock-vector">Alterar prazo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </main>
-    <footer>
-
-    </footer>
+    </div>
+</main>
+<footer>
+    
+</footer>
 </body>
 </html>

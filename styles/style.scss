@@ -2,6 +2,8 @@
 @import 'header';
 @import 'colors';
 @import 'toolbar';
+@import 'cards';
+@import 'buttons';
 /// CSS basico
 
 * {
@@ -10,4 +12,15 @@
 
 body {
     font-family: 'Open Sans';
+}
+
+main {
+    margin: auto;
+}
+
+@media (min-width: 1090px) {
+    .container {
+        max-width: 1090px;
+        margin: auto;
+    }
 }

@@ -1,15 +1,15 @@
 @import 'colors';
 
 .toolbar {
-    width: 75%;
+    max-width: 1090px;
+    width: 94%;
     margin: auto;
     display: flex;
     justify-content: space-between;
     background-color: $orange;
-    padding: 25px 100px;
+    padding: 25px;
     border-radius: 8px;
     align-items: center;
-    position: relative;
 }
 
 .search-bar {
@@ -73,7 +73,7 @@
     }
 }
 
-@media screen and(max-width: 360px) {
+@media screen and(max-width: 350px) {
     .search-bar {
         left: -5px;
     }

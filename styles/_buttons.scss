@@ -1,0 +1,49 @@
+@import 'colors';
+
+.finish-btn {
+    background-color: $purple;
+    font-weight: 600;
+    border-radius: 8px;
+    border: 0;
+    color: #FFFFFF;
+    display: inline-block;
+    height: 40px;
+    margin-top: 25px;
+    width: 100%;
+    max-width: 220px;
+}
+
+.deadline-btn {
+    background-color: $red;
+    border-radius: 8px;
+    border: 0;
+    color: #FFFFFF;
+    display: inline-flex;
+    height: 40px;
+    margin-top: 8px;
+    font-weight: 600;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.clock-vector {
+    margin-right: 7px;
+}
+
+@media screen and(max-width: 650px) {
+    .deadline-btn {
+        display: none;
+    }
+
+    .finish-btn {
+        background-color: #FFFFFF;
+        color: $purple;
+        border: 1px solid $purple;
+        font-weight: 600;
+        order: 4;
+        margin-top: 5px;
+        max-width: 155px;
+        height: 30px;
+    }
+}
