@@ -1,7 +1,7 @@
 .header {
   position: relative;
   text-align: center;
-  color: white;
+  color: #FFFFFF;
 }
 
 .title::before {
@@ -109,6 +109,14 @@
   padding-left: 30px;
   height: 34px;
   width: 200px;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="50"><polygon points="0,0 100,0 50,50" style="fill:%23414141;" /></svg>');
+  background-position: right 10px top 50%;
+  background-repeat: no-repeat;
+  background-size: 10px;
 }
 
 @media screen and (min-width: 700px) {
@@ -137,6 +145,7 @@
 @media screen and (max-width: 350px) {
   .search-bar {
     left: -5px;
+    max-width: 100%;
   }
   .search-control {
     width: 260px;
@@ -181,6 +190,7 @@
   background-color: #422755;
   border-radius: 0px 5px 5px 0px;
   font-size: 12px;
+  font-weight: bold;
   text-align: center;
   padding: 5px 20px;
 }
@@ -195,6 +205,7 @@
   background-color: #F04837;
   border-radius: 0px 5px 5px 0px;
   font-size: 12px;
+  font-weight: bold;
   text-align: center;
   padding: 5px 20px;
 }
@@ -294,6 +305,7 @@
 }
 
 .insertion {
+  padding-top: 5px;
   font-size: 10px;
 }
 
@@ -524,6 +536,160 @@
     margin-top: 5px;
     max-width: 155px;
     height: 30px;
+  }
+  .more-btn {
+    margin-top: 47px;
+  }
+}
+
+.regi-container {
+  background-color: #E5E5E5;
+  width: 85%;
+  margin: 130px auto 100px auto;
+  height: 120px;
+  border-radius: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#regi-title {
+  color: #6E4B87;
+  font-weight: bold;
+  padding: 20px 50px 7px 50px;
+}
+
+.regi-container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px 25px 20px 45px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #757575;
+  font-size: 12px;
+  width: 40%;
+}
+
+.form-box p {
+  padding-bottom: 5px;
+}
+
+.form-control {
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  padding: 9px 20px;
+}
+
+.regi-btn {
+  border-radius: 8px;
+  width: 100px;
+  border: none;
+  background-color: #6E4B87;
+  color: #FFFFFF;
+  height: 34px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .regi-container {
+    width: 95%;
+  }
+  .regi-box form {
+    padding: 5px 10px 20px 10px;
+  }
+  #regi-title {
+    padding: 20px 20px 7px 20px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 650px) {
+  .regi-container {
+    display: none;
+    width: 95%;
+  }
+}
+
+.linx-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+.linx-box p {
+  color: #414141;
+  max-width: 700px;
+  text-align: justify;
+  font-size: 14px;
+  padding: 20px;
+  line-height: 19px;
+}
+
+@media (max-width: 768px) {
+  .linx-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 65px;
+  }
+  .linx-box p {
+    text-align: center;
+    font-size: 12px;
+  }
+  .linx-box img {
+    -webkit-transform: scale(0.67);
+            transform: scale(0.67);
+  }
+}
+
+footer {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 12px;
+  line-height: 16px;
+  background-color: #422755;
+  height: 125px;
+}
+
+footer p {
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  footer {
+    margin-top: 40px;
   }
 }
 

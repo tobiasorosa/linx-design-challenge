@@ -1,0 +1,35 @@
+@import 'colors';
+
+.linx-box {
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.linx-box p {
+    color: $dark-gray;
+    max-width: 700px;
+    text-align: justify;
+    font-size: 14px;
+    padding: 20px;
+    line-height: 19px;
+}
+
+@media (max-width: 768px) {
+    .linx-box {
+        flex-direction: column;
+        margin-top: 65px;
+    }
+
+    .linx-box p {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .linx-box img {
+        transform: scale(0.67);
+    }
+}

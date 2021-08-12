@@ -1,0 +1,22 @@
+@import 'colors';
+
+footer {
+    margin-top: 50px;
+    display: flex;
+    color: $white;
+    text-align: center;
+    font-size: 12px;
+    line-height: 16px;
+    background-color: $purple;
+    height: 125px;
+
+    p {
+        margin: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        margin-top: 40px;
+    }
+}

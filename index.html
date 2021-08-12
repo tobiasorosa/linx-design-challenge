@@ -29,7 +29,7 @@
                 <form class="sort-bar">
                     <label for="sort">Organizar por:</label>
                     <select id="sort" name="sort-options" class="sort-list">
-                        <option value="prazo">Prazo</option>
+                        <option value="prazo" selected>Prazo</option>
                         <option value="prioridade">Prioridade</option>
                         <option value="data-dec">Mais antigo</option>
                         <option value="data-cres">Mais recente</option>
@@ -164,17 +164,39 @@
             <button type="button" class="more-btn">VER MAIS +</button>
         </section>
         <section id="register">
-            <div class="regi-box">
+            <div class="regi-container">
                 <h4 id="regi-title">Quer receber dicas para organizar melhor a sua rotina? Cadastre-se!</h4>
                 <form>
-                    
+                    <div class="form-box">
+                        <p>nome</p>
+                        <input type="text" class="form-control" placeholder="Digite seu nome">
+                    </div>
+                    <div class="form-box">
+                        <p>e-mail</p>
+                        <input type="email" class="form-control" placeholder="Digite seu e-mail">
+                    </div>
+                    <input type="submit" class="regi-btn" value="Cadastrar">
                 </form>
+            </div>
+        </section>
+        <section id="linx">
+            <div class="linx-box">
+                <img src="./assets/img/linx-banner.png" class="linx-banner" alt="Linx logo">
+                <p>
+                    A Linx é uma empresa brasileira especialista em tecnologia para o varejo. Líder no mercado de software de gestão, com 45,6% de market share do mercado varejista, conforme atesta o IDC.
+                    <br><br>Toda a expertise da Linx na jornada de compra é transformada em insights fundamentais para atingir o que os varejistas mais esperam: fidelizar seus consumidores e atingir resultados concretos e relevantes.
+                    <br><br>Com capital aberto na B3 desde 2013, a Linx também se tornou a primeira empresa brasileira de software com capital aberto na NYSE, em 2019. A empresa possui mais de 3,5 mil colaboradores distribuídos entre sua sede em São Paulo, 15 filiais pelo Brasil e 5 países da América. Para saber mais, acesse linx.com.br/imprensa.
+                </p>
             </div>
         </section>
         </div>
     </main>
     <footer>
-        
+        <p>
+            Testando suas habilidades em HTML e CSS. 
+            <br>Linx Impulse 2021
+            <br>Teste ficcional!
+        </p>
     </footer>
 </body>
 </html>

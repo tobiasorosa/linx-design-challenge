@@ -17,7 +17,7 @@
 }
 
 .toolbar label {
-    color: #FFFFFF;
+    color: $white;
     padding-right: 18px;
     font-size: 14px;
 }
@@ -39,7 +39,7 @@
     left: -17px;
     position: relative;
     background-color: $light-purple;
-    color: #FFFFFF;
+    color: $white;
     border-radius: 8px;
     border: 0;
     padding: 8px 10px;
@@ -52,6 +52,12 @@
     padding-left: 30px;
     height: 34px;
     width: 200px;
+    outline: none;
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="50"><polygon points="0,0 100,0 50,50" style="fill:%23414141;" /></svg>');
+    background-position: right 10px top 50%;
+    background-repeat: no-repeat;
+    background-size: 10px;
 }
 
 @media screen and(min-width: 700px) {
@@ -76,6 +82,7 @@
 @media screen and(max-width: 350px) {
     .search-bar {
         left: -5px;
+        max-width: 100%;
     }
 
     .search-control {
@@ -87,7 +94,7 @@
     }
 
     .toolbar label {
-        color: #FFFFFF;
+        color: $white;
         padding-right: 10px;
         font-size: 14px;
     }
