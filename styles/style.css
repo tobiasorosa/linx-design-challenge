@@ -189,37 +189,8 @@
   z-index: -1;
 }
 
-.dead-short::after {
-  position: relative;
-  bottom: 440px;
-  left: -10px;
-  color: #FFFFFF;
-  width: 100px;
-  content: 'Prazo curto!';
-  background-color: #422755;
-  border-radius: 0px 5px 5px 0px;
-  font-size: 12px;
-  font-weight: bold;
-  text-align: center;
-  padding: 5px 20px;
-}
-
-.dead-late::after {
-  position: relative;
-  bottom: 440px;
-  left: -10px;
-  color: #FFFFFF;
-  width: 100px;
-  content: 'Atrasado :(';
-  background-color: #F04837;
-  border-radius: 0px 5px 5px 0px;
-  font-size: 12px;
-  font-weight: bold;
-  text-align: center;
-  padding: 5px 20px;
-}
-
 .card {
+  position: relative;
   max-height: 360px;
   height: 360px;
   width: 260px;
@@ -245,6 +216,37 @@
           justify-content: flex-start;
   padding: 17px;
   overflow: hidden;
+}
+
+.dead-short::after {
+  position: absolute;
+  top: 25px;
+  left: -10px;
+  color: #FFFFFF;
+  width: 100px;
+  content: 'Prazo curto!';
+  background-color: #422755;
+  border-radius: 0px 5px 5px 0px;
+  border: none;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0 10px 0;
+}
+
+.dead-late::after {
+  position: absolute;
+  top: 25px;
+  left: -10px;
+  color: #FFFFFF;
+  width: 100px;
+  content: 'Atrasado :(';
+  background-color: #F04837;
+  border-radius: 0px 5px 5px 0px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0 10px 0;
 }
 
 .card-text {
@@ -329,10 +331,10 @@
     z-index: 1000;
   }
   .card-text > button {
-    visibility: hidden;
+    display: none;
   }
   .card:hover > .card-content > .card-text > button {
-    visibility: visible;
+    display: inline-block;
   }
 }
 
@@ -388,10 +390,12 @@
   .dead-short::after {
     bottom: 175px;
     left: -10px;
+    height: 10px;
   }
   .dead-late::after {
     bottom: 175px;
     left: -10px;
+    height: 10px;
   }
   .card-img {
     max-width: 147px;
@@ -442,11 +446,11 @@
     margin: auto;
   }
   .dead-short::after {
-    bottom: 170px;
+    top: 50px;
     left: -5px;
   }
   .dead-late::after {
-    bottom: 170px;
+    top: 50px;
     left: -5px;
   }
 }
@@ -670,7 +674,6 @@
 .linx-box p {
   color: #414141;
   max-width: 700px;
-  text-align: justify;
   font-size: 14px;
   padding: 20px;
   line-height: 19px;
