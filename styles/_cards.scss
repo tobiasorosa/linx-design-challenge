@@ -15,7 +15,7 @@
     position: relative;
     bottom: 440px;
     left: -10px;
-    color: #FFFFFF;
+    color: $white;
     width: 100px;
     content: 'Prazo curto!';
     background-color: #422755;
@@ -49,7 +49,7 @@
     border-radius: 14px;
     margin: 10px 0 35px 0px;
     box-shadow: 1px 5px 10px 0px #00000040;
-    background-color: $white;
+    background-color: #FFFFFF;
     z-index: 0;
 }
 
@@ -72,6 +72,7 @@
     line-height: 20px;
     font-weight: 700;
     margin: 10px 0;
+    color: $dark-gray;
 }
 
 .card-img {
@@ -116,9 +117,12 @@
 }
 
 .insertion {
+    color: $gray;
     padding-top: 5px;
     font-size: 10px;
 }
+
+/* Make animation only for desktop viewport */
 
 @media (min-width: 650px) {
     .card:hover {
@@ -137,11 +141,15 @@
     }
 }
 
+/* Change flexbox for smaller viewports */
+
 @media (max-width: 1090px) {
     .card-container{
         justify-content: space-around;
     }
 }
+
+/* Mobile viewport media query */ 
 
 @media (max-width: 650px) {
     .card {

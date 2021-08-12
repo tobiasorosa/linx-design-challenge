@@ -1,5 +1,7 @@
 @import 'colors';
 
+/* Forms for e-mails */
+
 .regi-container {
     background-color: $light-gray;
     width: 85%;
@@ -51,6 +53,8 @@
     font-weight: bold;
     font-size: 14px;
 }
+
+/* Media queries for smaller viewports */
 
 @media (max-width: 768px) {
     .regi-container {

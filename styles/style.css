@@ -1,3 +1,5 @@
+/* These are the main colors used in the page */
+/* Header with the trapezium */
 .header {
   position: relative;
   text-align: center;
@@ -30,6 +32,7 @@
   font-weight: 400;
 }
 
+/* Changing trapezium angle */
 @media screen and (max-width: 700px) {
   .title::before {
     height: 55%;
@@ -48,6 +51,9 @@
   }
 }
 
+/* These are the main colors used in the page */
+/* These are the main colors used in the page */
+/* Search and sort-list box */
 .toolbar {
   max-width: 1090px;
   width: 94%;
@@ -101,6 +107,7 @@
   border: 0;
   padding: 8px 10px;
   height: 34px;
+  font-weight: bold;
 }
 
 .sort-list {
@@ -110,6 +117,7 @@
   height: 34px;
   width: 200px;
   outline: none;
+  /* Changing arrow icon for dropwdown list*/
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -119,6 +127,7 @@
   background-size: 10px;
 }
 
+/* Media queries for smaller viewports */
 @media screen and (min-width: 700px) {
   .toolbar {
     margin-top: 3em;
@@ -254,6 +263,7 @@
   line-height: 20px;
   font-weight: 700;
   margin: 10px 0;
+  color: #414141;
 }
 
 .card-img {
@@ -305,10 +315,12 @@
 }
 
 .insertion {
+  color: #757575;
   padding-top: 5px;
   font-size: 10px;
 }
 
+/* Make animation only for desktop viewport */
 @media (min-width: 650px) {
   .card:hover {
     max-height: 900px;
@@ -324,6 +336,7 @@
   }
 }
 
+/* Change flexbox for smaller viewports */
 @media (max-width: 1090px) {
   .card-container {
     -ms-flex-pack: distribute;
@@ -331,6 +344,7 @@
   }
 }
 
+/* Mobile viewport media query */
 @media (max-width: 650px) {
   .card {
     position: relative;
@@ -437,6 +451,8 @@
   }
 }
 
+/* These are the main colors used in the page */
+/* Buttons in the task cards section */
 .finish-btn {
   background-color: #422755;
   font-weight: 600;
@@ -478,6 +494,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
+  max-width: 220px;
   background-position: center;
   -webkit-transition: background 0.8s;
   transition: background 0.8s;
@@ -521,6 +539,7 @@
   margin-right: 7px;
 }
 
+/* Changing buttons for smaller screens and making "Alterar prazo" button invisible */
 @media screen and (max-width: 650px) {
   .deadline-btn {
     display: none;
@@ -542,6 +561,8 @@
   }
 }
 
+/* These are the main colors used in the page */
+/* Forms for e-mails */
 .regi-container {
   background-color: #E5E5E5;
   width: 85%;
@@ -606,6 +627,7 @@
   font-size: 14px;
 }
 
+/* Media queries for smaller viewports */
 @media (max-width: 768px) {
   .regi-container {
     width: 95%;
@@ -626,6 +648,8 @@
   }
 }
 
+/* These are the main colors used in the page */
+/* The Linx banner section */
 .linx-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -670,6 +694,8 @@
   }
 }
 
+/* These are the main colors used in the page */
+/* Page's footer */
 footer {
   margin-top: 50px;
   display: -webkit-box;
@@ -693,11 +719,7 @@ footer p {
   }
 }
 
-* {
-  font-family: 'Open Sans';
-}
-
-body {
+*, body {
   font-family: 'Open Sans';
 }
 

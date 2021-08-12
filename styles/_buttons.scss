@@ -1,11 +1,13 @@
 @import 'colors';
 
+/* Buttons in the task cards section */
+
 .finish-btn {
     background-color: $purple;
     font-weight: 600;
     border-radius: 8px;
     border: 0;
-    color: #FFFFFF;
+    color: $white;
     display: inline-block;
     height: 40px;
     margin-top: 25px;
@@ -25,7 +27,7 @@
     background-color: $red;
     border-radius: 8px;
     border: 0;
-    color: #FFFFFF;
+    color: $white;
     display: inline-flex;
     height: 40px;
     margin-top: 8px;
@@ -33,6 +35,8 @@
     align-items: center;
     text-align: center;
     justify-content: center;
+    width: 100%;
+    max-width: 220px;
     background-position: center;
     transition: background 0.8s;
 }
@@ -52,7 +56,7 @@
     background: $light-purple;
     border-radius: 8px;
     border: none;
-    color: #FFFFFF;
+    color: $white;
     margin: 10px auto;
     background-position: center;
     transition: background 0.8s;
@@ -72,13 +76,15 @@
     margin-right: 7px;
 }
 
+/* Changing buttons for smaller screens and making "Alterar prazo" button invisible */
+
 @media screen and(max-width: 650px) {
     .deadline-btn {
         display: none;
     }
 
     .finish-btn {
-        background-color: #FFFFFF;
+        background-color: $white;
         color: $purple;
         border: 1px solid $purple;
         font-weight: 600;

@@ -1,5 +1,7 @@
 @import 'colors';
 
+/* Header with the trapezium */
+
 .header {
     position: relative;
     text-align: center;
@@ -30,6 +32,8 @@
     padding-bottom: 6em;
     font-weight: 400;
 }
+
+/* Changing trapezium angle */
 
 @media screen and(max-width: 700px) {
     .title::before {
