@@ -2,72 +2,83 @@
 
 /* Forms for e-mails */
 
-.regi-container {
-    background-color: $light-gray;
-    width: 85%;
-    margin: 130px auto 100px auto;
-    height: 120px;
-    border-radius: 8px;
-    align-items: center;
+.regi {
+    &-container {
+        background-color: $light-gray;
+        width: 85%;
+        margin: 130px auto 100px auto;
+        height: 120px;
+        border-radius: 8px;
+        align-items: center;
+    }
+
+    &-title {
+        color: $light-purple;
+        font-weight: bold;
+        padding: 20px 50px 7px 50px;
+    }
+
+    &-container form {
+        display: flex;
+        padding: 5px 25px 20px 45px;
+        justify-content: space-between;
+    }
+
+    &-btn {
+        border-radius: 8px;
+        width: 100px;
+        border: none;
+        background-color: $light-purple;
+        color: $white;
+        height: 34px;
+        align-self: flex-end;
+        font-weight: bold;
+        font-size: 14px;
+    }
 }
 
-#regi-title {
-    color: $light-purple;
-    font-weight: bold;
-    padding: 20px 50px 7px 50px;
+.form {
+
+    &-box {
+        display: flex;
+        flex-direction: column;
+        color: $gray;
+        font-size: 12px;
+        width: 40%;
+
+        p {
+            padding-bottom: 5px;
+        }
+    }
+
+
+
+    &-control {
+        border-radius: 8px;
+        border: none;
+        outline: none;
+        padding: 9px 20px;
+    }
 }
 
-.regi-container form {
-    display: flex;
-    padding: 5px 25px 20px 45px;
-    justify-content: space-between;
-}
-
-.form-box {
-    display: flex;
-    flex-direction: column;
-    color: $gray;
-    font-size: 12px;
-    width: 40%;
-}
-
-.form-box p {
-    padding-bottom: 5px;
-}
-
-.form-control {
-    border-radius: 8px;
-    border: none;
-    outline: none;
-    padding: 9px 20px;
-}
-
-.regi-btn {
-    border-radius: 8px;
-    width: 100px;
-    border: none;
-    background-color: $light-purple;
-    color: $white;
-    height: 34px;
-    align-self: flex-end;
-    font-weight: bold;
-    font-size: 14px;
-}
 
 /* Media queries for smaller viewports */
 
 @media (max-width: 768px) {
-    .regi-container {
-        width: 95%;
-    }
-
-    .regi-box form {
-        padding: 5px 10px 20px 10px;
-    }
     
-    #regi-title {
-        padding: 20px 20px 7px 20px;
-        text-align: center;
+    .regi{
+        &-container {
+            width: 95%;
+        }
+
+        &-box form {
+            padding: 5px 10px 20px 10px;
+        }
+        
+        &-title {
+            padding: 20px 20px 7px 20px;
+            text-align: center;
+        }
     }
 }
 

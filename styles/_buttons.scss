@@ -9,6 +9,9 @@
     border: 0;
     color: $white;
     display: inline-block;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
     height: 40px;
     margin-top: 25px;
     width: 100%;
@@ -79,7 +82,7 @@
 
 /* Changing buttons for smaller screens and making "Alterar prazo" button invisible */
 
-@media screen and(max-width: 650px) {
+@media (max-width: 650px) {
     .deadline-btn {
         display: none;
     }

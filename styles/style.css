@@ -6,6 +6,12 @@
   color: #FFFFFF;
 }
 
+.title {
+  font-size: 36px;
+  padding-top: 140px;
+  font-weight: 800;
+}
+
 .title::before {
   content: '';
   position: absolute;
@@ -19,12 +25,6 @@
   width: 100%;
 }
 
-.title {
-  font-size: 36px;
-  padding-top: 140px;
-  font-weight: 800;
-}
-
 .subtitle {
   font-size: 18px;
   padding-top: 1.6em;
@@ -34,14 +34,14 @@
 }
 
 /* Changing trapezium angle */
-@media screen and (max-width: 700px) {
-  .title::before {
-    height: 55%;
-  }
+@media (max-width: 700px) {
   .title {
     font-size: 24px;
     padding-top: 64px;
     padding-bottom: 2em;
+  }
+  .title::before {
+    height: 55%;
   }
   .subtitle {
     color: #422755;
@@ -73,16 +73,16 @@
           align-items: center;
 }
 
-.search-bar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .toolbar label {
   color: #FFFFFF;
   padding-right: 18px;
   font-size: 14px;
+}
+
+.search-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .search-control {
@@ -130,13 +130,13 @@
 }
 
 /* Media queries for smaller viewports */
-@media screen and (min-width: 700px) {
+@media (min-width: 700px) {
   .toolbar {
     margin-top: 3em;
   }
 }
 
-@media screen and (max-width: 900px) {
+@media (max-width: 900px) {
   .toolbar {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -227,37 +227,6 @@
   overflow: hidden;
 }
 
-.dead-short::after {
-  position: absolute;
-  top: 25px;
-  left: -10px;
-  color: #FFFFFF;
-  width: 100px;
-  content: 'Prazo curto!';
-  background-color: #422755;
-  border-radius: 0px 5px 5px 0px;
-  border: none;
-  font-size: 12px;
-  font-weight: bold;
-  text-align: center;
-  padding: 10px 0 10px 0;
-}
-
-.dead-late::after {
-  position: absolute;
-  top: 25px;
-  left: -10px;
-  color: #FFFFFF;
-  width: 100px;
-  content: 'Atrasado :(';
-  background-color: #F04837;
-  border-radius: 0px 5px 5px 0px;
-  font-size: 12px;
-  font-weight: bold;
-  text-align: center;
-  padding: 10px 0 10px 0;
-}
-
 .card-text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -292,6 +261,37 @@
   height: 50px;
   margin-bottom: 8px;
   text-align: justify;
+}
+
+.dead-short::after {
+  position: absolute;
+  top: 25px;
+  left: -10px;
+  color: #FFFFFF;
+  width: 100px;
+  content: 'Prazo curto!';
+  background-color: #422755;
+  border-radius: 0px 5px 5px 0px;
+  border: none;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0 10px 0;
+}
+
+.dead-late::after {
+  position: absolute;
+  top: 25px;
+  left: -10px;
+  color: #FFFFFF;
+  width: 100px;
+  content: 'Atrasado :(';
+  background-color: #F04837;
+  border-radius: 0px 5px 5px 0px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0 10px 0;
 }
 
 .deadline {
@@ -343,7 +343,9 @@
     display: none;
   }
   .card:hover > .card-content > .card-text > button {
-    display: inline-block;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
   }
 }
 
@@ -359,13 +361,10 @@
 @media (max-width: 650px) {
   .card {
     position: relative;
-  }
-  .card-container {
     width: 100%;
-    margin: 0 auto;
-  }
-  #card5, #card6, #card7, #card8 {
-    display: none;
+    max-width: 340px;
+    height: 210px;
+    margin: 12px 0;
   }
   .card-content {
     -webkit-box-orient: horizontal;
@@ -390,22 +389,6 @@
             align-items: left;
     margin-left: 5px;
   }
-  .card {
-    width: 100%;
-    max-width: 340px;
-    height: 210px;
-    margin: 12px 0;
-  }
-  .dead-short::after {
-    bottom: 175px;
-    left: -10px;
-    height: 10px;
-  }
-  .dead-late::after {
-    bottom: 175px;
-    left: -10px;
-    height: 10px;
-  }
   .card-img {
     max-width: 147px;
     max-height: 171px;
@@ -422,6 +405,23 @@
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+  }
+  .card-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  #card5, #card6, #card7, #card8 {
+    display: none;
+  }
+  .dead-short::after {
+    bottom: 175px;
+    left: -10px;
+    height: 10px;
+  }
+  .dead-late::after {
+    bottom: 175px;
+    left: -10px;
+    height: 10px;
   }
   .deadline {
     -webkit-box-ordinal-group: 4;
@@ -442,13 +442,13 @@
 }
 
 @media (max-width: 355px) {
-  .card-img {
-    width: 137px;
-    height: 160px;
-  }
   .card {
     width: 95%;
     height: auto;
+  }
+  .card-img {
+    width: 137px;
+    height: 160px;
   }
   .card-content {
     padding: auto;
@@ -473,6 +473,13 @@
   border: 0;
   color: #FFFFFF;
   display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 40px;
   margin-top: 25px;
   width: 100%;
@@ -553,7 +560,7 @@
 }
 
 /* Changing buttons for smaller screens and making "Alterar prazo" button invisible */
-@media screen and (max-width: 650px) {
+@media (max-width: 650px) {
   .deadline-btn {
     display: none;
   }
@@ -587,7 +594,7 @@
           align-items: center;
 }
 
-#regi-title {
+.regi-title {
   color: #6E4B87;
   font-weight: bold;
   padding: 20px 50px 7px 50px;
@@ -601,6 +608,19 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.regi-btn {
+  border-radius: 8px;
+  width: 100px;
+  border: none;
+  background-color: #6E4B87;
+  color: #FFFFFF;
+  height: 34px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-weight: bold;
+  font-size: 14px;
 }
 
 .form-box {
@@ -627,19 +647,6 @@
   padding: 9px 20px;
 }
 
-.regi-btn {
-  border-radius: 8px;
-  width: 100px;
-  border: none;
-  background-color: #6E4B87;
-  color: #FFFFFF;
-  height: 34px;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  font-weight: bold;
-  font-size: 14px;
-}
-
 /* Media queries for smaller viewports */
 @media (max-width: 768px) {
   .regi-container {
@@ -648,7 +655,7 @@
   .regi-box form {
     padding: 5px 10px 20px 10px;
   }
-  #regi-title {
+  .regi-title {
     padding: 20px 20px 7px 20px;
     text-align: center;
   }

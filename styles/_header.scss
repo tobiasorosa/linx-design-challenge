@@ -8,22 +8,22 @@
     color: $white;
 }
 
-.title::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    background-color: $purple;
-    display: block;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
-    z-index: -1;
-    height: 100%;
-    width: 100%;
-}
-
 .title {
     font-size: 36px;
     padding-top: 140px;
     font-weight: 800;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        background-color: $purple;
+        display: block;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+    }
 }
 
 .subtitle {
@@ -36,15 +36,16 @@
 
 /* Changing trapezium angle */
 
-@media screen and(max-width: 700px) {
-    .title::before {
-        height: 55%;
-    }
+@media (max-width: 700px) {
 
     .title {
         font-size: 24px;
         padding-top: 64px;
         padding-bottom: 2em;
+
+        &::before {
+            height: 55%;
+        }
     }
     
     .subtitle {

@@ -12,41 +12,44 @@
     padding: 25px;
     border-radius: 8px;
     align-items: center;
+    
+    label {
+        color: $white;
+        padding-right: 18px;
+        font-size: 14px;
+    }
 }
 
-.search-bar {
-    display: flex;
-}
+.search {
+    
+    &-bar {
+        display: flex;
+    }
 
-.toolbar label {
-    color: $white;
-    padding-right: 18px;
-    font-size: 14px;
-}
+    &-control {
+        width: 276px;
+        right: -17px;
+        max-height: 34px;
+        border-radius: 8px 0px 0px 8px;
+        border: 0;
+        outline: none;
+        padding: 10px 50px 10px 15px;
+        display: inline-block;
+        position: relative;
+        box-sizing: border-box;
+    }
 
-.search-control {
-    width: 276px;
-    right: -17px;
-    max-height: 34px;
-    border-radius: 8px 0px 0px 8px;
-    border: 0;
-    outline: none;
-    padding: 10px 50px 10px 15px;
-    display: inline-block;
-    position: relative;
-    box-sizing: border-box;
-}
-
-.search-btn {
-    left: -17px;
-    position: relative;
-    background-color: $light-purple;
-    color: $white;
-    border-radius: 8px;
-    border: 0;
-    padding: 8px 10px;
-    height: 34px;
-    font-weight: bold;
+    &-btn {
+        left: -17px;
+        position: relative;
+        background-color: $light-purple;
+        color: $white;
+        border-radius: 8px;
+        border: 0;
+        padding: 8px 10px;
+        height: 34px;
+        font-weight: bold;
+    }
 }
 
 .sort-list {
@@ -69,13 +72,13 @@
 
 /* Media queries for smaller viewports */
 
-@media screen and(min-width: 700px) {
+@media (min-width: 700px) {
     .toolbar {
         margin-top: 3em;
     }
 }
 
-@media screen and(max-width: 900px) {
+@media (max-width: 900px) {
     .toolbar {
         flex-direction: column;
         width: 98%;
@@ -90,24 +93,27 @@
 }
 
 @media (max-width: 350px) {
-    .search-bar {
-        left: -5px;
-        max-width: 100%;
+    .search {
+        
+        &-bar {
+            left: -5px;
+            max-width: 100%;
+        }
+
+        &-control {
+            width: 260px;
+        }
     }
 
-    .search-control {
-        width: 260px;
-    }
+        .sort-list {
+            width: 180px;
+        }
 
-    .sort-list {
-        width: 180px;
-    }
-
-    .toolbar label {
-        color: $white;
-        padding-right: 10px;
-        font-size: 14px;
-    }
+        .toolbar label {
+            color: $white;
+            padding-right: 10px;
+            font-size: 14px;
+        }
 }
 
 @media (max-width: 300px) {
