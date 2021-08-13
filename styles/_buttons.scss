@@ -15,12 +15,13 @@
     max-width: 220px;
     background-position: center;
     transition: background 0.8s;
-}
 
-.finish-btn:active {
-    background-color: $light-purple;
-    background-size: 100%;
-    transition: background 0s;
+    &:active {
+        background-color: $light-purple;
+        background-size: 100%;
+        transition: background 0s;
+    }
+
 }
 
 .deadline-btn {
@@ -39,12 +40,16 @@
     max-width: 220px;
     background-position: center;
     transition: background 0.8s;
-}
 
-.deadline-btn:active {
-    background-color: $orange;
-    background-size: 100%;
-    transition: background 0s;
+    &:active {
+        background-color: $orange;
+        background-size: 100%;
+        transition: background 0s;
+    }
+    
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .more-btn {
@@ -60,16 +65,12 @@
     margin: 10px auto;
     background-position: center;
     transition: background 0.8s;
-}
-
-.more-btn:active {
-    background-color: $purple;
-    background-size: 100%;
-    transition: background 0s;
-}
-
-.deadline-btn:hover {
-    cursor: pointer;
+    
+    &:active {
+        background-color: $purple;
+        background-size: 100%;
+        transition: background 0s;
+    }
 }
 
 .clock-vector {

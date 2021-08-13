@@ -30,6 +30,7 @@
   padding-top: 1.6em;
   padding-bottom: 6em;
   font-weight: 400;
+  line-height: 22px;
 }
 
 /* Changing trapezium angle */
@@ -146,13 +147,14 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    max-width: 400px;
   }
   .search-bar {
     margin-bottom: 20px;
   }
 }
 
-@media screen and (max-width: 350px) {
+@media (max-width: 350px) {
   .search-bar {
     left: -5px;
     max-width: 100%;
@@ -167,6 +169,12 @@
     color: #FFFFFF;
     padding-right: 10px;
     font-size: 14px;
+  }
+}
+
+@media (max-width: 300px) {
+  .sort-bar {
+    padding-left: 20px;
   }
 }
 
@@ -513,6 +521,10 @@
   transition: background 0s;
 }
 
+.deadline-btn:hover {
+  cursor: pointer;
+}
+
 .more-btn {
   display: block;
   width: 200px;
@@ -534,10 +546,6 @@
   background-size: 100%;
   -webkit-transition: background 0s;
   transition: background 0s;
-}
-
-.deadline-btn:hover {
-  cursor: pointer;
 }
 
 .clock-vector {
