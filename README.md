@@ -1,3 +1,5 @@
+
+<p align="center"><img align="center" src="https://linxdesignchallenge-tobias.netlify.app/assets/img/linx-banner.png"></p>
 <h1 align="center">Linx Web Design Challenge</h1>
 <p align="center">Web Design Challenge | Made for Linx S.A.</p>
 
